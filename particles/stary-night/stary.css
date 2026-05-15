@@ -1,0 +1,41 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.starLayer {
+  position: fixed;
+  pointer-events: none;
+  user-select: none;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+@keyframes fadeStar {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.star {
+  position: absolute;
+  animation: fadeStar 1000ms;
+  font-size: 3rem;
+}
+
+.btn {
+  padding: 2rem 4rem;
+  background-color: blue;
+  color: aliceblue;
+  font-size: 3rem;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  bottom: 10%;
+  z-index: 2;
+}
