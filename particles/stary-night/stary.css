@@ -25,7 +25,7 @@ body {
 .star {
   position: absolute;
   animation: fadeStar 1000ms;
-  font-size: 3rem;
+  /* font-size: 3rem; */
 }
 
 .btn {
